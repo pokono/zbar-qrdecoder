@@ -17,11 +17,30 @@ This is a PHP wrapper for `zbar-tools` - (only `zbarimg` at the moment). See [ht
  
 Install this package through [Composer](https://getcomposer.org/). 
 
+If you're using this repo you're gonna need to define it under repositories in your composer.json file.
 Add this to your `composer.json` dependencies:
-
 ```js
+"repositories": [
+	{
+		"type": "package",
+		"package": {
+			"name": "robbiep/zbar-qrdecoder",
+			"version": "3.0",
+			"source": {
+				"url": "git@github.com:pokono/zbar-qrdecoder.git",
+				"type": "git",
+				"reference": "3.x"
+			},
+			"autoload": {
+				"psr-4": {
+					"RobbieP\\ZbarQrdecoder\\": "src/"
+				}
+			}
+		}
+	}
+],
 "require": {
-   "robbiep/zbar-qrdecoder": "^2.0"
+   "robbiep/zbar-qrdecoder": "^3.0"
 }
 ```
 
