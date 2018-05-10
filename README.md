@@ -40,7 +40,7 @@ Add this to your `composer.json` dependencies:
 	}
 ],
 "require": {
-   "robbiep/zbar-qrdecoder": "^3.0"
+	"robbiep/zbar-qrdecoder": "^3.0"
 }
 ```
 
